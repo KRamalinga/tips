@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Emp info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+            <div class="info">
+               UserName:          <input type="text" class="name" placeholder="Name" ><br>
+               Usernumber:  <input type="text"  class="name"placeholder="Enter Number"><br>
+               Useremail:     <input type="text" class="name" placeholder="Enter Email"><br>
+               
+               <br>
+
+
+            </div>
+           <button type="submit"class="btn" onclick="openPopup()">Submit</button><br>
+
+     <div class="popup" id="popup">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.WOIdDUL8NSzwEdTHm_aKoQHaHZ&pid=Api&P=0" class="img">
+    
+        <h2>Thank You!</h2>
+        <p>Your details has been successfully submitted Thanks!</p>
+        <button type="button" onclick="closePopup()">OK</button>
+     </div>
+  <p class="pag">Click above submit button after the ur information !!!</p>
+
+   </div>
+  </div>
+
+   <script>
+    let popup = document.getElementById("popup");
+    function closePopup(){
+      popup.classlist.remove("close-popup");
+    }
+    function openPopup(){
+      popup.classList.add("open-popup");
+    }
+   </script>
+   </body>
+</html>
